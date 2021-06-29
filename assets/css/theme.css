@@ -121,6 +121,8 @@ body {
             border-top: 1px solid #e3e3e4;
             bottom: -55px;
             left: 0; }
+        body .container .col-1 .content .social-networks-wrapp {
+          margin-top: 55px; }
     body .container .col-2 {
       flex-grow: 7;
       background: url("../../assets/images/image_summer-1.png") no-repeat left center;
