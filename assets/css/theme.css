@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; }
+  body .container {
+    background: #f2f5fa;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    body .container .col-1 {
+      flex-grow: 1;
+      position: relative; }
+      @media screen and (min-width: 1520px) and (max-width: 1920px) {
+        body .container .col-1 {
+          max-width: 680px; } }
+      body .container .col-1 header .navbar-container {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 100px;
+        height: 55px; }
+        body .container .col-1 header .navbar-container .nav-logo {
+          align-self: baseline; }
+        body .container .col-1 header .navbar-container .navbar {
+          align-self: center;
+          list-style-type: none;
+          margin: 0;
+          padding: 0; }
+          body .container .col-1 header .navbar-container .navbar .nav-item {
+            display: inline-block; }
+            body .container .col-1 header .navbar-container .navbar .nav-item a {
+              font-size: 16px;
+              color: #6a707b;
+              text-decoration: none; }
+      body .container .col-1 .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 140px; }
+        body .container .col-1 .content h3 {
+          font-family: Georgia, serif;
+          font-size: 32px;
+          font-weight: 400;
+          margin: 0; }
+        body .container .col-1 .content p {
+          color: #6a707b;
+          font-size: 16px;
+          margin: 35px 0 0; }
+        body .container .col-1 .content .e-mail-wrapp {
+          position: relative;
+          margin: 55px 0; }
+          body .container .col-1 .content .e-mail-wrapp .e-mail {
+            width: 100%;
+            padding: 25px 5px;
+            border-top: 1px solid #e3e3e4;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid #e3e3e4;
+            font-size: 16px; }
+            body .container .col-1 .content .e-mail-wrapp .e-mail::placeholder {
+              font-size: 16px;
+              color: #6a707b; }
+            body .container .col-1 .content .e-mail-wrapp .e-mail:focus, body .container .col-1 .content .e-mail-wrapp .e-mail:active, body .container .col-1 .content .e-mail-wrapp .e-mail:hover {
+              outline: none; }
+          body .container .col-1 .content .e-mail-wrapp:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -40px;
+            width: 40px;
+            border-top: 1px solid #e3e3e4;
+            border-right: none;
+            border-bottom: 1px solid #e3e3e4;
+            border-left: 4px solid #4066a5;
+            background-color: #fff; }
+          body .container .col-1 .content .e-mail-wrapp:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -225px;
+            width: 225px;
+            border-top: 1px solid #e3e3e4;
+            border-right: 1px solid #e3e3e4;
+            border-bottom: 1px solid #e3e3e4;
+            border-left: none;
+            background-color: #fff; }
+        body .container .col-1 .content .agreement {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0; }
+        body .container .col-1 .content label[for=terms] {
+          display: inline-block;
+          position: relative;
+          color: #6a707b;
+          margin-bottom: 55px;
+          padding-left: 40px; }
+          body .container .col-1 .content label[for=terms] .check {
+            position: absolute;
+            top: -6px;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            border: 1px solid #e3e3e4;
+            border-radius: 5px; }
+            body .container .col-1 .content label[for=terms] .check:hover {
+              cursor: pointer; }
+          body .container .col-1 .content label[for=terms] a {
+            color: #131821; }
+          body .container .col-1 .content label[for=terms]:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            border-top: 1px solid #e3e3e4;
+            bottom: -55px;
+            left: 0; }
+    body .container .col-2 {
+      flex-grow: 7;
+      background: url("../../assets/images/image_summer-1.png") no-repeat left center;
+      background-size: auto; }
