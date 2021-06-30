@@ -7,12 +7,21 @@ jQuery(function ($){
         var contentHeight = parentHeight - menuHeight;
         $('.content').css('height',contentHeight);
     }
-    $('.check').on('click', function (){
-        var termsInput = $('#terms');
-        termsInput.attr('checked', !termsInput.attr('checked'))
-    });
-    $(document).ready(function (){
+    function testEmail() {
+        var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+        if (testEmail.test($('.e-mail').value)){
 
+        }
+        else {
+
+        }
+    }
+    $(document).ready(function (){
         fixHeight();
-    })
+    });
+    $(window).resize(function() {
+        if ($(window).width > 768){
+            fixHeight();
+        }
+    });
 });
