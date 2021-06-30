@@ -92,8 +92,7 @@ body {
             border-left: 4px solid $blue;
             background-color: #fff;
           }
-          &:after {
-            content: '';
+          .send {
             position: absolute;
             top: 0;
             bottom: 0;
@@ -104,22 +103,38 @@ body {
             border-bottom: 1px solid $light_gray;
             border-left: none;
             background-color: #fff;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 40px;
+            cursor: pointer;
           }
         }
-        .agreement {
-          position: absolute;
-          opacity: 0;
-          cursor: pointer;
-          height: 0;
-          width: 0;
-        }
         label[for=terms] {
-          display: inline-block;
+          display: block;
           position: relative;
           color: $gray;
           margin-bottom: 55px;
           padding-left: 40px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          .agreement {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            &:checked ~.check {
+              background-color: $blue;
+              &:after {
+                display: block;
+              }
+            }
+          }
           .check {
+            display: block;
             position: absolute;
             top: -6px;
             left: 0;
@@ -127,6 +142,20 @@ body {
             width: 25px;
             border: 1px solid $light_gray;
             border-radius: 5px;
+            &:after {
+              content: "";
+              position: absolute;
+              display: none;
+              left: 9px;
+              top: 5px;
+              width: 5px;
+              height: 10px;
+              border: solid white;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
             &:hover {
               cursor: pointer;
             }
