@@ -39,17 +39,28 @@
                 <p>Subscribe to our newsletter and get 10% discount on pineapple glasses.</p>
                 <div class="e-mail-wrapp">
                     <input class="e-mail" type="email" placeholder="Type your email address here...">
+                    <button disabled class="send">
+                        <img src="assets/images/ic_arrow-1.svg" alt="">
+                    </button> 
                 </div>
                 <label for="terms">I agree to <a href="#">terms of service</a>
-                    <span class="check"></span>
                     <input id="terms" class="agreement" type="checkbox" >
+                    <span class="check"></span>
                 </label>
                 <div class="social-networks-wrapp">
                     <ul class="social-networks">
-                        <li class="network"></li>
-                        <li class="network"></li>
-                        <li class="network"></li>
-                        <li class="network"></li>
+                        <li class="network">
+                            <a href="" target="_blank"></a>
+                        </li>
+                        <li class="network">
+                            <a href="" target="_blank"></a>
+                        </li>
+                        <li class="network">
+                            <a href="" target="_blank"></a>
+                        </li>
+                        <li class="network">
+                            <a href="" target="_blank"></a>
+                        </li>
                     </ul>
                 </div>
             </main>
